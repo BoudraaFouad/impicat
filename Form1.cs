@@ -40,10 +40,10 @@ namespace impicat
             errori = 0;
             lblP.Text = generaTrattini(parola);
             lblMess.Text = "";
-            lblErr.Text = "errori: 0/" + maxErrori;
+            lblErr.Text = "errori 0/" + maxErrori;
             txtLett.Clear();
             txtParolaIntera.Clear();
-            txtLettera.Enabled = true;
+            txtLett.Enabled = true;
             txtParolaIntera.Enabled = true;
             btnLett.Enabled = true;
             btnPar.Enabled = true;
@@ -107,12 +107,9 @@ namespace impicat
         }
         private void btnLett_Click(object sender, EventArgs e)
         {
-            if (txtLettera.Text.Length == 0)
-            {
-                return;
-            }
 
-            char lettera = char.ToUpper(txtLettera.Text[0]);
+            
+            char lettera = char.ToUpper(txtLett.Text[0]);
             string parolaVisibile = lblP.Text;
             string parolaAgg = "";
             bool trovata = false;
@@ -166,12 +163,9 @@ namespace impicat
         }
         private void btnPar_Click(object sender, EventArgs e)
         {
-            if (txtParolaIntera.Text.Trim().Length == 0)
-            {
-                return;
-            }
 
-            if (txtParolaIntera.Text.Trim().ToUpper() == parola.ToUpper())
+           
+            if (txtParolaIntera.Text.ToUpper() == parola.ToUpper())
             {
                 lblP.Text = parola.ToUpper();
                 lblMess.Text = "hai vinto la parola era " + parola;
@@ -184,7 +178,7 @@ namespace impicat
                 lblMess.Text = "parola sbagliat";
                 if (errori >= maxErrori)
                 {
-                    lblMess.Text = "hai perso la parola era: " + parola;
+                    lblMess.Text = "hai perso la parola era " + parola;
                     finish();
                 }
             }
@@ -193,7 +187,7 @@ namespace impicat
         }
         private void finish()
         {
-            txtLettera.Enabled = false;
+            txtLett.Enabled = false;
             txtParolaIntera.Enabled = false;
             btnLett.Enabled = false;
             btnPar.Enabled = false;

@@ -45,17 +45,18 @@
             // 
             titolbl.AutoSize = true;
             titolbl.Font = new Font("Showcard Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            titolbl.Location = new Point(325, 9);
+            titolbl.Location = new Point(371, 12);
             titolbl.Name = "titolbl";
-            titolbl.Size = new Size(295, 60);
+            titolbl.Size = new Size(357, 74);
             titolbl.TabIndex = 0;
             titolbl.Text = "IMPICCATO";
             // 
             // btnCit
             // 
-            btnCit.Location = new Point(95, 139);
+            btnCit.Location = new Point(109, 185);
+            btnCit.Margin = new Padding(3, 4, 3, 4);
             btnCit.Name = "btnCit";
-            btnCit.Size = new Size(75, 23);
+            btnCit.Size = new Size(86, 31);
             btnCit.TabIndex = 28;
             btnCit.Text = "città";
             btnCit.UseVisualStyleBackColor = true;
@@ -63,9 +64,10 @@
             // 
             // btnSer
             // 
-            btnSer.Location = new Point(95, 92);
+            btnSer.Location = new Point(109, 123);
+            btnSer.Margin = new Padding(3, 4, 3, 4);
             btnSer.Name = "btnSer";
-            btnSer.Size = new Size(75, 23);
+            btnSer.Size = new Size(86, 31);
             btnSer.TabIndex = 29;
             btnSer.Text = "serie tv";
             btnSer.UseVisualStyleBackColor = true;
@@ -73,9 +75,10 @@
             // 
             // btnCor
             // 
-            btnCor.Location = new Point(95, 46);
+            btnCor.Location = new Point(109, 61);
+            btnCor.Margin = new Padding(3, 4, 3, 4);
             btnCor.Name = "btnCor";
-            btnCor.Size = new Size(75, 23);
+            btnCor.Size = new Size(86, 31);
             btnCor.TabIndex = 33;
             btnCor.Text = "corpo";
             btnCor.UseVisualStyleBackColor = true;
@@ -85,37 +88,39 @@
             // 
             lblP.AutoSize = true;
             lblP.Font = new Font("Courier New", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblP.Location = new Point(260, 175);
+            lblP.Location = new Point(297, 233);
             lblP.Name = "lblP";
-            lblP.Size = new Size(109, 30);
+            lblP.Size = new Size(137, 37);
             lblP.TabIndex = 34;
             lblP.Text = "label1";
             // 
             // txtParolaIntera
             // 
-            txtParolaIntera.Location = new Point(650, 368);
+            txtParolaIntera.Location = new Point(743, 491);
+            txtParolaIntera.Margin = new Padding(3, 4, 3, 4);
             txtParolaIntera.Name = "txtParolaIntera";
-            txtParolaIntera.Size = new Size(100, 23);
+            txtParolaIntera.Size = new Size(114, 27);
             txtParolaIntera.TabIndex = 37;
             // 
             // btnPar
             // 
             btnPar.Font = new Font("Showcard Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPar.Location = new Point(481, 330);
+            btnPar.Location = new Point(550, 440);
+            btnPar.Margin = new Padding(3, 4, 3, 4);
             btnPar.Name = "btnPar";
-            btnPar.Size = new Size(130, 87);
+            btnPar.Size = new Size(161, 116);
             btnPar.TabIndex = 38;
             btnPar.Text = "inserisci parola";
             btnPar.UseVisualStyleBackColor = true;
-            btnPar.UseWaitCursor = true;
+
             // 
             // lblErr
             // 
             lblErr.AutoSize = true;
             lblErr.Font = new Font("Courier New", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblErr.Location = new Point(29, 190);
+            lblErr.Location = new Point(33, 253);
             lblErr.Name = "lblErr";
-            lblErr.Size = new Size(109, 30);
+            lblErr.Size = new Size(137, 37);
             lblErr.TabIndex = 39;
             lblErr.Text = "label1";
             // 
@@ -123,35 +128,37 @@
             // 
             lblMess.AutoSize = true;
             lblMess.Font = new Font("Courier New", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMess.Location = new Point(29, 236);
+            lblMess.Location = new Point(33, 315);
             lblMess.Name = "lblMess";
-            lblMess.Size = new Size(109, 30);
+            lblMess.Size = new Size(137, 37);
             lblMess.TabIndex = 40;
             lblMess.Text = "label1";
             // 
             // btnLett
             // 
             btnLett.Font = new Font("Showcard Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLett.Location = new Point(40, 330);
+            btnLett.Location = new Point(46, 440);
+            btnLett.Margin = new Padding(3, 4, 3, 4);
             btnLett.Name = "btnLett";
-            btnLett.Size = new Size(130, 87);
+            btnLett.Size = new Size(162, 116);
             btnLett.TabIndex = 41;
             btnLett.Text = "inserisci";
             btnLett.UseVisualStyleBackColor = true;
-            btnLett.UseWaitCursor = true;
+
             // 
             // txtLett
             // 
-            txtLett.Location = new Point(218, 368);
+            txtLett.Location = new Point(249, 491);
+            txtLett.Margin = new Padding(3, 4, 3, 4);
             txtLett.Name = "txtLett";
-            txtLett.Size = new Size(100, 23);
+            txtLett.Size = new Size(114, 27);
             txtLett.TabIndex = 42;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(txtLett);
             Controls.Add(btnLett);
             Controls.Add(lblMess);
@@ -163,6 +170,7 @@
             Controls.Add(btnSer);
             Controls.Add(btnCit);
             Controls.Add(titolbl);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
